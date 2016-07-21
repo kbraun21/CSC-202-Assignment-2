@@ -17,8 +17,13 @@ import utils.lists.ArrayIndexedList;
 
 public class LoginJavaFXView extends Application {
 
+    public static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
-    public void start(Stage primaryStage) throws Exception{
+    public void start(Stage primaryStage) throws Exception {
+
         loadUserDB();
         Parent loginView = FXMLLoader.load(getClass().getResource("LoginJavaFX.fxml"));
         primaryStage.setTitle("Login Page");
@@ -39,7 +44,5 @@ public class LoginJavaFXView extends Application {
 
 
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+
 }

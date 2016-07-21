@@ -4,11 +4,14 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.TextField;
 import model.UserDB;
+import utils.lists.ArrayIndexedList;
 import utils.lists.ArrayOrderedList;
+import utils.lists.IListIndexed;
 import view.SignupJavaFXView;
 import view.WelcomeJavaFXView;
 import java.io.IOException;
 import java.util.ArrayList;
+
 
 import javafx.scene.control.PasswordField;
 
@@ -18,7 +21,7 @@ import javafx.scene.control.PasswordField;
  */
 
 
-public class LoginController {
+public class LoginController extends ArrayIndexedList {
     @FXML
     TextField uname;
     @FXML

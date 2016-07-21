@@ -18,6 +18,9 @@ public class LinkedListQueue<T> implements ILinkedListQueue<T> {
         rear = null;
     }
 
+    public LinkedListQueue(int numNodes) {
+    }
+
     @Override
     public void enqueue(T element)
     //Adds an element to the rear of the queue
